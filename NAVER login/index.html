@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6b53e39096.js" crossorigin="anonymous"></script>
+  <title>네이버 : 로그인</title>
+</head>
+<body>
+  <header>
+    <div class="language">
+      <select name="selectLang" class="selectLang">
+        <option value="kor" selected>한국어</option>
+        <option value="eng">English</option>
+        <option value="china1">中文(简体)</option>
+        <option value="china2">中文(台灣)</option>
+      </select>
+    </div>
+    <div class="logo">
+      <img src="image/naver_logo.png" alt="">
+    </div>
+  </header>
+
+  <section class="login">
+    <form action="" class="login_form">
+      <div class="id_box">
+        <input type="text" name="input_id" id="input_id" placeholder="아이디">
+      </div>
+      <div class="pw_box">
+        <input type="password" name="input_password" id="input_password" placeholder="비밀번호">
+      </div>
+      <input type="submit" id="login" value="로그인">
+    </form>
+
+    <div class="option">
+      <div class="login_chk">
+        <button id=check>
+          <i class="far fa-check-circle"></i>
+        </button>
+        <label for="check" class="state">로그인 상태 유지</label>
+      </div>
+      <div class="security">
+        <div class="ip_chk">
+          <span class="ip">IP보안</span>
+          <span class="switch">OFF</span>
+        </div>
+        <div class="one_login">
+          <span class="once"><a href="#">일회용 로그인</a></span>
+          <input type="button" name="moreBtn" id="moreBtn" value="?">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="find_info">
+    <ul>
+      <li class="find_id">아이디 찾기</li>
+      <li class="find_password">비밀번호 찾기</li>
+      <li class="sign_up">회원가입</li>
+    </ul>
+  </section>
+
+  <sectioin class="notice">
+    <div class="image">
+      <img src="image/naver_lock.PNG" alt="">
+    </div>
+  </sectioin>
+
+  <footer>
+    <ul class="service">
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">개인정보처리방침</a></li>
+      <li><a href="#">책임의 한계와 법적고지</a></li>
+      <li><a href="#">회원정보 고객센터</a></li>
+    </ul>
+    <div class="copyright">
+      <img class="small_logo" src="image/naver_logo.png" alt="">
+      <span class="text">Copyright &copy;</span>
+      <span class="name">NAVER Corp.</span>
+      <span class="text">All Rights Reserved.</span>
+    </div>
+  </footer>
+</body>
+</html>

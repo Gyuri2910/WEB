@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+:root {
+  --grey-dark-color: #ceced3;
+  --grey-light-color: #f5f6f7;
+  --green-color: #62bb46;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --size-mega: 60px;
+  --size-big: 36px;
+  --size-medium: 24px;
+  --size-small: 12px;
+  --size-micro: 8px;
+  --size-button: 18px;
+}
+
+body {
+  background-color: var(--grey-light-color);
+  display: flex;
+  flex-direction: column;
+  font-size: var(--size-small);
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* header */
+/* header {
+  width: 100%;
+} */
+
+.language {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.language .selectLang {
+  border-color: var(--grey-dark-color);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--size-small);
+  padding-bottom: var(--size-small);
+}
+
+.logo img {
+  width: 200px;
+}
+
+/* login */
+.login_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_form * {
+  margin: var(--size-micro);
+}
+
+.login_form .id_box, .login_form .pw_box {
+  height: var(--size-big);
+  border: 1px solid var(--grey-dark-color);
+  background-color: var(--white-color);
+}
+
+.login_form .id_box:active, .login_form .pw_box:active{
+  border: 1px solid var(--green-color);
+}
+
+.login_form .id_box #input_id, .login_form .pw_box #input_password {
+  border: none;
+  width: 90%;
+}
+
+.login_form #login {
+  height: var(--size-mega);
+  background-color: var(--green-color);
+  border: none;
+  margin-top: var(--size-small);
+  font-size: calc(var(--size-medium) *2 /3);
+  color: var(--grey-light-color);
+}
+
+/* option */
+.option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--size-medium);
+}
+
+.option .login_chk {
+  display: flex;
+  align-items: center;
+}
+
+#check {
+  border: 0;
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--grey-dark-color);
+}
+
+#check i{
+  font-size: var(--size-medium);
+}
+
+.option .security {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.option .security > * {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.option .security * {
+  padding-right: 5px;
+}
+
+.option .security .switch {
+  font-weight: bold;
+  color: var(--green-color);
+}
+
+.option .security .once a {
+  color: var(--black-color);
+}
+
+.option .security #moreBtn {
+  height: var(--size-button);
+  width: var(--size-button);
+  padding: 0;
+}
+
+/* 아이디 비밀번호 찾기 */
+.find_info {
+  width: 100%;
+  border-top: solid 1px var(--grey-dark-color);
+  padding-top: calc(var(--size-small) + 6px);
+  padding-bottom: var(--size-big);
+}
+
+.find_info ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 50px;
+  padding: 0;
+}
+
+.find_info ul *{
+  padding: 0 10px;
+  font-weight: lighter;
+}
+
+.find_info ul li:not(:last-child) {
+  border-right: solid 1px var(--grey-dark-color);
+}
+
+/* notice 공지 사진 */
+.notice {
+  margin-bottom: 100px;
+}
+
+.notice .image {
+  display: flex;
+  justify-content: center;
+}
+
+.notice .image img {
+  width: 500px;
+}
+
+
+/* footer */
+footer{
+  width: 100%;
+  /* position: absolute;
+  bottom: 0; */
+}
+
+footer .service {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 50px;
+  padding: 0;
+}
+
+footer .service li {
+  padding: 0 10px;
+  text-align: center;
+}
+
+footer .service li a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+footer .service li:nth-child(2) {
+  font-weight: bold;
+}
+
+footer .service li:not(:last-child){
+  border-right: solid 1px var(--black-color);
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+footer .copyright > * {
+  padding: 0 3px;
+}
+
+footer .copyright .small_logo {
+  display: inline;
+  width: 60px;
+}
+
+footer .copyright .name {
+  font-weight: bold;
+}
+
+
+@media (min-width: 800px) {
+  .login_form {
+    align-items: center;
+  }
+
+  .login_form .id_box, .login_form .pw_box, .login_form #login {
+    width: 600px;
+  }
+
+  .option {
+    width: 600px;
+    margin: 0 auto 24px auto;
+  }
+
+  .find_info {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
