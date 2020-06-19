@@ -57,7 +57,7 @@ function sendHttpRequest(method, url) {
 }
 
 function updateVideo(id) {
-  v.innerHTML = '<iframe src="//www.youtube.com/embed/' + id + '?autoplay=1" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>';
+  v.innerHTML = '<iframe src="http://www.youtube.com/embed/' + id + '?autoplay=1" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>';
   //open api를 통해서 받아온 video의 id를 주소와 합쳐서 iframe에 넘김
 }
 
